@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>The Essemble Cafe • Welcome</title>
+<link rel="stylesheet" href="src/assets/css/style.css">
+</head>
+<body data-page="home">
+<header class="topbar"><div class="brand">The <b>Essemble</b> Cafe <span style="font-size:11px;color:#999;font-weight:600">ORDER KIOSK</span></div><div class="top-actions"><button class="pill" onclick="go('home')">⌂ Home</button><button class="pill cart-pill" onclick="go('cart')">🛒 Cart <span id="headCount">0</span></button></div></header>
+<main class="shell">
+<section id="home" class="screen active home"><div class="home-inner"><div class="eyebrow">Welcome to The Essemble Cafe</div><h1 class="h1">Good food. Easy ordering.</h1><p class="sub">Choose how you'd like to enjoy your meal today.</p><div class="home-options"><button class="mode-card" onclick="startOrder('Dine In',this)"><span class="mode-icon">🍽️</span><strong>Dine In</strong></button><button class="mode-card" onclick="startOrder('Takeaway',this)"><span class="mode-icon">🛍️</span><strong>Takeaway</strong></button></div><!-- SETTINGS HOOKS: Language, spoken guidance, and audio controls are wired below. Add your own assets without changing this layout. -->
+<div class="settings"><div class="language-setting" aria-label="Choose language">
+  <button class="language-option" data-language="English" onclick="setLanguage('English')">English</button>
+  <button class="language-option" data-language="Bahasa Melayu" onclick="setLanguage('Bahasa Melayu')">Bahasa Melayu</button>
+  <button class="language-option" data-language="中文" onclick="setLanguage('中文')">中文</button>
+  <button class="language-option" data-language="தமிழ்" onclick="setLanguage('தமிழ்')">தமிழ்</button>
+</div><button class="setting" type="button" onclick="toggleVoiceChat()" aria-expanded="false" aria-controls="voiceChatPanel" aria-label="Open simulated customer speech input">🎙️ SPEAK <span id="speechSwitch" class="switch"></span></button><button class="setting" onclick="toggleSetting('audio')">AUDIO <span id="audioSwitch" class="switch"></span></button></div></div></section>
+</main>
+
+<section id="voiceChatPanel" class="voice-chat-panel" aria-label="Customer voice simulation" hidden>
+  <div class="voice-chat-head"><strong>Simulate customer speech</strong><button type="button" onclick="toggleVoiceChat(false)" aria-label="Close chat">×</button></div>
+  <p>Type the exact phrase a customer would say. This is a command simulation, not AI.</p>
+  <form id="voiceChatForm">
+    <input id="voiceChatInput" type="text" autocomplete="off" placeholder='Try "Dine In" or "Bungkus"' aria-label="Simulated customer speech">
+    <button type="submit">Send</button>
+  </form>
+  <small>Only predefined phrases trigger actions. Unknown phrases do nothing.</small>
+</section>
+<button id="floatCart" class="cart-float" onclick="go('cart')" style="display:none">View cart <span id="floatCount">0</span> · <b id="floatTotal">$0.00</b></button>
+<footer>The Essemble Cafe Self-Ordering Kiosk · Prototype experience</footer>
+<script src="src/javascript/app.js"></script>
+</body>
+</html>

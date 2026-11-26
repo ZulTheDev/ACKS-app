@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>The Essemble Cafe • Cart</title>
+<link rel="stylesheet" href="../src/assets/css/style.css">
+</head>
+<body data-page="cart">
+<header class="topbar"><div class="brand">The <b>Essemble</b> Cafe <span style="font-size:11px;color:#999;font-weight:600">ORDER KIOSK</span></div><div class="top-actions"><button class="pill" onclick="go('home')">⌂ Home</button><button class="pill cart-pill" onclick="go('cart')">🛒 Cart <span id="headCount">0</span></button></div></header>
+<main class="shell">
+<section id="cart" class="screen active"><div class="eyebrow">Almost there</div><h1 class="h1">Your cart</h1><p class="sub" id="orderTypeLabel">Review your order before checkout.</p><div class="cart-layout"><div class="panel"><div id="cartItems"></div><button class="secondary" onclick="go('menu')">＋ Add more items</button></div><div class="panel"><h2 style="margin-top:0">Order summary</h2><div id="cartSummary"></div><button class="primary" style="width:100%;margin-top:15px" onclick="checkout()" id="checkoutBtn">Continue to checkout →</button></div></div></section>
+</main>
+<button id="floatCart" class="cart-float" onclick="go('cart')" style="display:none">View cart <span id="floatCount">0</span> · <b id="floatTotal">$0.00</b></button>
+<footer>The Essemble Cafe Self-Ordering Kiosk · Prototype experience</footer>
+<script src="../src/javascript/app.js"></script>
+</body>
+</html>

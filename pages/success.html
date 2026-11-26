@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>The Essemble Cafe • Order received</title>
+<link rel="stylesheet" href="../src/assets/css/style.css">
+</head>
+<body data-page="success">
+<header class="topbar"><div class="brand">The <b>Essemble</b> Cafe <span style="font-size:11px;color:#999;font-weight:600">ORDER KIOSK</span></div><div class="top-actions"><button class="pill" onclick="go('home')">⌂ Home</button><button class="pill cart-pill" onclick="go('cart')">🛒 Cart <span id="headCount">0</span></button></div></header>
+<main class="shell">
+<section id="success" class="screen active"><div class="success"><div class="success-icon">🎉</div><div class="eyebrow">Order received</div><h1 class="h1">Thank you!</h1><p id="successText" class="sub"></p><h2 id="orderNumber"></h2><div id="walletReceipt" class="panel" style="max-width:420px;margin:18px auto;text-align:left"></div><button class="primary" onclick="newOrder()">Start a new order</button></div></section>
+</main>
+<button id="floatCart" class="cart-float" onclick="go('cart')" style="display:none">View cart <span id="floatCount">0</span> · <b id="floatTotal">$0.00</b></button>
+<footer>The Essemble Cafe Self-Ordering Kiosk · Prototype experience</footer>
+<script src="../src/javascript/app.js"></script>
+</body>
+</html>

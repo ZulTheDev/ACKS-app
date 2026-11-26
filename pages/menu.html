@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>The Essemble Cafe • Menu</title>
+<link rel="stylesheet" href="../src/assets/css/style.css">
+</head>
+<body data-page="menu">
+
+<main class="shell">
+<section id="menu" class="screen active"><div class="menu-head">
+  <div><div class="eyebrow">The Essemble Cafe Menu</div><h1 class="h1" id="menuTitle">FAMILY VALUES BENTO</h1></div>
+  <input id="search" class="search" placeholder="⌕  Search menu..." oninput="renderMenu()" aria-label="Search menu">
+</div><div class="menu-layout"><aside class="sidebar">
+  <div class="sidebar-brand">The <span>Essemble</span> Cafe</div>
+  <div class="sidebar-label">MENU</div>
+  <div id="categories"></div>
+  <div class="sidebar-bottom">
+    <button class="sidebar-nav" onclick="go('cart')">▣ &nbsp; Cart <span id="headCount">0</span></button>
+    <button class="sidebar-nav" onclick="go('home')">⌂ &nbsp; Home</button>
+  </div>
+</aside><div><div class="product-grid" id="products"></div></div></div></section>
+</main>
+<button id="floatCart" class="cart-float" onclick="go('cart')" style="display:none">View cart <span id="floatCount">0</span> · <b id="floatTotal">$0.00</b></button>
+<footer>The Essemble Cafe Self-Ordering Kiosk · Prototype experience</footer>
+<script src="../src/javascript/app.js"></script>
+</body>
+</html>

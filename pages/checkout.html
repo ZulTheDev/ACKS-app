@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>The Essemble Cafe • Checkout</title>
+<link rel="stylesheet" href="../src/assets/css/style.css">
+</head>
+<body data-page="checkout">
+<header class="topbar"><div class="brand">The <b>Essemble</b> Cafe <span style="font-size:11px;color:#999;font-weight:600">ORDER KIOSK</span></div><div class="top-actions"><button class="pill" onclick="go('home')">⌂ Home</button><button class="pill cart-pill" onclick="go('cart')">🛒 Cart <span id="headCount">0</span></button></div></header>
+<main class="shell">
+<section id="checkout" class="screen active"><button class="back" onclick="go('cart')">← Back to cart</button><div class="eyebrow">Final step</div><h1 class="h1">Checkout</h1><p class="sub">Confirm your details and place your order.</p><div class="checkout-grid"><div class="panel"><h2 style="margin-top:0">Order details</h2><div id="checkoutSummary"></div></div><div class="panel"><h2 style="margin-top:0">Your details</h2><label class="field-label">Name<input id="customerName" class="input" placeholder="Your name"></label><label class="field-label">Table number <input id="tableNo" class="input" placeholder="e.g. 08"></label><label class="field-label">Contact number (optional)<input id="phone" class="input" placeholder="+65"></label><label class="field-label">Payment method<select id="payment" class="input" onchange="onPaymentMethodChange()"><option>Pay at counter</option><option>PayNow at counter</option><option>Card at counter</option><option>PayNow QR (Demo)</option><option>Demo Wallet</option></select></label><div id="demoQrPayment" class="demo-qr-panel" hidden><div class="demo-qr-title">PayNow QR · DEMO ONLY</div><div class="demo-qr-code"><div id="demoQrGraphic" aria-label="Mock QR code"></div></div><p>Scan simulation only. This mock QR is not linked to a bank or payment account.</p><div class="demo-qr-reference">Demo merchant: ESSEMBLE CAFE<br>Demo reference: ESB-DEMO-2026<br>Mock UEN: 000000000X</div><button type="button" class="secondary demo-qr-confirm" id="simulateQrButton" onclick="simulateQrPayment()">Simulate successful scan</button><p id="demoQrStatus" class="demo-qr-status" aria-live="polite"></p></div><p class="notice">Demo checkout: this prototype records the order locally on this device. No payment is processed.</p><button class="primary" style="width:100%;margin-top:15px" onclick="placeOrder()">Place order ✓</button></div></div></section>
+</main>
+<button id="floatCart" class="cart-float" onclick="go('cart')" style="display:none">View cart <span id="floatCount">0</span> · <b id="floatTotal">$0.00</b></button>
+<footer>The Essemble Cafe Self-Ordering Kiosk · Prototype experience</footer>
+<script src="../src/javascript/app.js"></script>
+</body>
+</html>
