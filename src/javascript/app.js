@@ -2,50 +2,50 @@ const assetPath=p=>(location.pathname.includes('/pages/')?'../src/assets/':'src/
 const money=n=>'$'+n.toFixed(2);
 const products=[
 {id:'family_01',name:'Burger & Chicken Rice Family',category:'Bento Set',price:68.80,img:assetPath('assets/cards/F01_burger_and_chicken_rice_family_472x225.png'),desc:'Family sharing set with burgers and chicken rice.'},
-{id:'family_02',name:'Nasi Lemak & Burger Family',category:'Bento Set',price:68.80,img:assetPath('assets/cards/F02_nasi_lemak_and_burger_family_472x225.png'),desc:'Family sharing set with nasi lemak and burgers.'},
-{id:'family_03',name:'Asian Rice Feast',category:'Bento Set',price:68.80,img:assetPath('assets/cards/F03_asian_rice_feast_472x225.png'),desc:'A family sharing feast of Asian rice favourites.'},
-{id:'family_04',name:'Western Platter Family',category:'Bento Set',price:68.80,img:assetPath('assets/cards/F04_western_platter_family_472x225.png'),desc:'Western-style family sharing platter.'},
-{id:'family_05',name:'Wok & Rice Mega Family',category:'Bento Set',price:68.80,img:assetPath('assets/cards/F05_wok_and_rice_mega_family_472x225.png'),desc:'A large family sharing set of wok and rice dishes.'},
+{id:'family_02',name:'Nasi Lemak & Burger Family',category:'Bento Set',price:71.80,img:assetPath('assets/cards/F02_nasi_lemak_and_burger_family_472x225.png'),desc:'Family sharing set with nasi lemak and burgers.'},
+{id:'family_03',name:'Asian Rice Feast',category:'Bento Set',price:74.80,img:assetPath('assets/cards/F03_asian_rice_feast_472x225.png'),desc:'A family sharing feast of Asian rice favourites.'},
+{id:'family_04',name:'Western Platter Family',category:'Bento Set',price:77.80,img:assetPath('assets/cards/F04_western_platter_family_472x225.png'),desc:'Western-style family sharing platter.'},
+{id:'family_05',name:'Wok & Rice Mega Family',category:'Bento Set',price:80.80,img:assetPath('assets/cards/F05_wok_and_rice_mega_family_472x225.png'),desc:'A large family sharing set of wok and rice dishes.'},
 {id:'burger_01',name:'Classic Beef Burger',category:'Bento Set',price:8.80,img:assetPath('assets/cards/B01_classic_beef_burger_472x225.png'),desc:'Classic beef burger.'},
 {id:'burger_02',name:'Crispy Chicken Burger',category:'Bento Set',price:7.80,img:assetPath('assets/cards/B02_crispy_chicken_burger_472x225.png'),desc:'Crispy chicken burger.'},
 {id:'burger_03',name:'Spicy Chicken Burger',category:'Bento Set',price:8.20,img:assetPath('assets/cards/B03_spicy_chicken_burger_472x225.png'),desc:'Spicy chicken burger.'},
-{id:'burger_04',name:'Fish Burger',category:'Bento Set',price:7.80,img:assetPath('assets/cards/B04_fish_burger_472x225.png'),desc:'Fish burger.'},
+{id:'burger_04',name:'Fish Burger',category:'Bento Set',price:7.60,img:assetPath('assets/cards/B04_fish_burger_472x225.png'),desc:'Fish burger.'},
 {id:'burger_05',name:'Double Beef Burger',category:'Bento Set',price:10.80,img:assetPath('assets/cards/B05_double_beef_burger_472x225.png'),desc:'Double beef burger.'},
 {id:'rice_01',name:'Nasi Lemak',category:'Rice Set',price:6.50,img:assetPath('assets/cards/R01_nasi_lemak_472x225.png'),desc:'Coconut rice served with traditional accompaniments.'},
 {id:'rice_02',name:'Chicken Rice',category:'Rice Set',price:6.80,img:assetPath('assets/cards/R02_chicken_rice_472x225.png'),desc:'Tender chicken served with fragrant rice.'},
 {id:'rice_03',name:'Roasted Chicken Rice',category:'Rice Set',price:7.50,img:assetPath('assets/cards/R03_roasted_chicken_rice_472x225.png'),desc:'Roasted chicken with fragrant rice.'},
-{id:'rice_04',name:'Nasi Ayam Penyet',category:'Rice Set',price:7.80,img:assetPath('assets/cards/R04_nasi_ayam_penyet_472x225.png'),desc:'Smashed fried chicken rice set.'},
-{id:'rice_05',name:'Thai Basil Chicken',category:'Rice Set',price:7.80,img:assetPath('assets/cards/R05_thai_basil_chicken_472x225.png'),desc:'Thai basil chicken rice.'},
+{id:'rice_04',name:'Nasi Ayam Penyet',category:'Rice Set',price:8.10,img:assetPath('assets/cards/R04_nasi_ayam_penyet_472x225.png'),desc:'Smashed fried chicken rice set.'},
+{id:'rice_05',name:'Thai Basil Chicken',category:'Rice Set',price:8.30,img:assetPath('assets/cards/R05_thai_basil_chicken_472x225.png'),desc:'Thai basil chicken rice.'},
 {id:'wok_01',name:'Nasi Goreng',category:'Rice Set',price:7.20,img:assetPath('assets/cards/W01_nasi_goreng_472x225.png'),desc:'Wok-fried rice.'},
-{id:'wok_02',name:'Indomie Goreng',category:'Rice Set',price:6.80,img:assetPath('assets/cards/W02_indomie_goreng_472x225.png'),desc:'Wok-fried Indomie noodles.'},
+{id:'wok_02',name:'Indomie Goreng',category:'Rice Set',price:6.90,img:assetPath('assets/cards/W02_indomie_goreng_472x225.png'),desc:'Wok-fried Indomie noodles.'},
 {id:'wok_03',name:'Fish & Chips',category:'Bento Set',price:9.80,img:assetPath('assets/cards/W03_fish_and_chips_472x225.png'),desc:'Fish and chips.'},
-{id:'wok_04',name:'Chicken Schnitzel',category:'Bento Set',price:9.80,img:assetPath('assets/cards/W04_chicken_schnitzel_472x225.png'),desc:'Crispy chicken schnitzel.'},
-{id:'wok_05',name:'Beef Lasagna',category:'Bento Set',price:9.80,img:assetPath('assets/cards/W05_beef_lasagna_472x225.png'),desc:'Baked beef lasagna.'},
+{id:'wok_04',name:'Chicken Schnitzel',category:'Bento Set',price:10.20,img:assetPath('assets/cards/W04_chicken_schnitzel_472x225.png'),desc:'Crispy chicken schnitzel.'},
+{id:'wok_05',name:'Beef Lasagna',category:'Bento Set',price:10.50,img:assetPath('assets/cards/W05_beef_lasagna_472x225.png'),desc:'Baked beef lasagna.'},
 {id:'boba_01',name:'Brown Sugar Milk Tea',category:'Drink & Beverage',price:4.80,img:assetPath('assets/bubble_tea/BT01_brown_sugar_milk_tea_472x225.png'),desc:'Freshly prepared bubble tea.'},
-{id:'boba_02',name:'Classic Milk Tea',category:'Drink & Beverage',price:4.50,img:assetPath('assets/bubble_tea/BT02_classic_milk_tea_472x225.png'),desc:'Freshly prepared bubble tea.'},
-{id:'boba_03',name:'Matcha Milk Tea',category:'Drink & Beverage',price:5.20,img:assetPath('assets/bubble_tea/BT03_matcha_milk_tea_472x225.png'),desc:'Freshly prepared bubble tea.'},
-{id:'boba_04',name:'Taro Milk Tea',category:'Drink & Beverage',price:4.80,img:assetPath('assets/bubble_tea/BT04_taro_milk_tea_472x225.png'),desc:'Freshly prepared bubble tea.'},
-{id:'boba_05',name:'Strawberry Milk Tea',category:'Drink & Beverage',price:5.00,img:assetPath('assets/bubble_tea/BT05_strawberry_milk_tea_472x225.png'),desc:'Freshly prepared bubble tea.'},
+{id:'boba_02',name:'Classic Milk Tea',category:'Drink & Beverage',price:4.40,img:assetPath('assets/bubble_tea/BT02_classic_milk_tea_472x225.png'),desc:'Freshly prepared bubble tea.'},
+{id:'boba_03',name:'Matcha Milk Tea',category:'Drink & Beverage',price:5.40,img:assetPath('assets/bubble_tea/BT03_matcha_milk_tea_472x225.png'),desc:'Freshly prepared bubble tea.'},
+{id:'boba_04',name:'Taro Milk Tea',category:'Drink & Beverage',price:4.70,img:assetPath('assets/bubble_tea/BT04_taro_milk_tea_472x225.png'),desc:'Freshly prepared bubble tea.'},
+{id:'boba_05',name:'Strawberry Milk Tea',category:'Drink & Beverage',price:5.10,img:assetPath('assets/bubble_tea/BT05_strawberry_milk_tea_472x225.png'),desc:'Freshly prepared bubble tea.'},
 {id:'drink_01',name:'Iced Cola',category:'Drink & Beverage',price:2.20,img:assetPath('assets/drinks/D01_iced_cola_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
-{id:'drink_02',name:'Iced Milk Tea',category:'Drink & Beverage',price:3.80,img:assetPath('assets/drinks/D02_iced_milk_tea_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
-{id:'drink_03',name:'Citrus Iced Drink',category:'Drink & Beverage',price:3.50,img:assetPath('assets/drinks/D03_citrus_iced_drink_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
-{id:'drink_04',name:'Berry Iced Drink',category:'Drink & Beverage',price:3.80,img:assetPath('assets/drinks/D04_berry_iced_drink_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
-{id:'drink_05',name:'Lemon Soda',category:'Drink & Beverage',price:3.50,img:assetPath('assets/drinks/D05_lemon_soda_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
+{id:'drink_02',name:'Iced Milk Tea',category:'Drink & Beverage',price:3.60,img:assetPath('assets/drinks/D02_iced_milk_tea_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
+{id:'drink_03',name:'Citrus Iced Drink',category:'Drink & Beverage',price:3.20,img:assetPath('assets/drinks/D03_citrus_iced_drink_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
+{id:'drink_04',name:'Berry Iced Drink',category:'Drink & Beverage',price:3.90,img:assetPath('assets/drinks/D04_berry_iced_drink_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
+{id:'drink_05',name:'Lemon Soda',category:'Drink & Beverage',price:3.40,img:assetPath('assets/drinks/D05_lemon_soda_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
 {id:'drink_06',name:'Hot Coffee',category:'Drink & Beverage',price:2.50,img:assetPath('assets/drinks/D06_hot_coffee_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
-{id:'drink_07',name:'Russian Kvass',category:'Drink & Beverage',price:3.80,img:assetPath('assets/drinks_extra/D07_russian_kvass_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
-{id:'drink_08',name:'Thai Iced Tea',category:'Drink & Beverage',price:3.80,img:assetPath('assets/drinks_extra/D08_thai_iced_tea_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
+{id:'drink_07',name:'Russian Kvass',category:'Drink & Beverage',price:4.10,img:assetPath('assets/drinks_extra/D07_russian_kvass_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
+{id:'drink_08',name:'Thai Iced Tea',category:'Drink & Beverage',price:4.30,img:assetPath('assets/drinks_extra/D08_thai_iced_tea_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
 {id:'drink_09',name:'Singapore Iced Kopi',category:'Drink & Beverage',price:2.80,img:assetPath('assets/drinks_extra/D09_singapore_iced_kopi_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
-{id:'drink_10',name:'Iced Matcha',category:'Drink & Beverage',price:4.80,img:assetPath('assets/drinks_extra/D10_iced_matcha_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
-{id:'drink_11',name:'Coca-Cola',category:'Drink & Beverage',price:2.20,img:assetPath('assets/drinks_extra/SD01_coca_cola_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
-{id:'drink_12',name:'Coca-Cola Zero',category:'Drink & Beverage',price:2.20,img:assetPath('assets/drinks_extra/SD02_coca_cola_zero_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
-{id:'drink_13',name:'Pepsi',category:'Drink & Beverage',price:2.20,img:assetPath('assets/drinks_extra/SD03_pepsi_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
-{id:'drink_14',name:'Fanta Grape',category:'Drink & Beverage',price:2.20,img:assetPath('assets/drinks_extra/SD04_fanta_grape_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
-{id:'drink_15',name:'Sprite',category:'Drink & Beverage',price:2.20,img:assetPath('assets/drinks_extra/SD05_sprite_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
-{id:'drink_16',name:'Baikal',category:'Drink & Beverage',price:3.50,img:assetPath('assets/drinks_extra/RU01_baikal_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
-{id:'drink_17',name:'Tarhun',category:'Drink & Beverage',price:3.50,img:assetPath('assets/drinks_extra/RU02_tarhun_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
-{id:'drink_18',name:'Ramune',category:'Drink & Beverage',price:4.00,img:assetPath('assets/drinks_extra/JP01_ramune_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
+{id:'drink_10',name:'Iced Matcha',category:'Drink & Beverage',price:5.00,img:assetPath('assets/drinks_extra/D10_iced_matcha_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
+{id:'drink_11',name:'Coca-Cola',category:'Drink & Beverage',price:2.30,img:assetPath('assets/drinks_extra/SD01_coca_cola_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
+{id:'drink_12',name:'Coca-Cola Zero',category:'Drink & Beverage',price:2.40,img:assetPath('assets/drinks_extra/SD02_coca_cola_zero_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
+{id:'drink_13',name:'Pepsi',category:'Drink & Beverage',price:2.60,img:assetPath('assets/drinks_extra/SD03_pepsi_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
+{id:'drink_14',name:'Fanta Grape',category:'Drink & Beverage',price:2.70,img:assetPath('assets/drinks_extra/SD04_fanta_grape_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
+{id:'drink_15',name:'Sprite',category:'Drink & Beverage',price:2.90,img:assetPath('assets/drinks_extra/SD05_sprite_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
+{id:'drink_16',name:'Baikal',category:'Drink & Beverage',price:3.70,img:assetPath('assets/drinks_extra/RU01_baikal_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
+{id:'drink_17',name:'Tarhun',category:'Drink & Beverage',price:3.80,img:assetPath('assets/drinks_extra/RU02_tarhun_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
+{id:'drink_18',name:'Ramune',category:'Drink & Beverage',price:4.60,img:assetPath('assets/drinks_extra/JP01_ramune_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
 {id:'drink_19',name:'Milkis',category:'Drink & Beverage',price:3.50,img:assetPath('assets/drinks_extra/KR01_milkis_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'},
-{id:'drink_20',name:'Est Cola',category:'Drink & Beverage',price:2.20,img:assetPath('assets/drinks_extra/TH01_est_cola_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'}
+{id:'drink_20',name:'Est Cola',category:'Drink & Beverage',price:3.00,img:assetPath('assets/drinks_extra/TH01_est_cola_472x225.png'),desc:'Refreshing drink from the The Essemble Cafe beverage menu.'}
 ];
 // MENU INTERACTION HOOK: Add/remove category names here; renderMenu() rebuilds the category buttons and product list.
 const cats=['Bento Set','Drink & Beverage','Rice Set'];
@@ -681,6 +681,19 @@ function defaultBundleComponents(product){
   ];
   return [component('main','Main item',product.id,product.category)];
 }
+// Bundle replacements are charged only for the difference from the item originally included.
+function bundleComponentAdjustment(){
+  if(!current || !current.id.startsWith('family_'))return 0;
+  const defaults=defaultBundleComponents(current);
+  return (custom.components||[]).reduce((total,item)=>{
+    const original=defaults.find(x=>x.id===item.id);
+    if(!original || item.removed)return total;
+    const originalProduct=products.find(p=>p.id===original.productId);
+    const chosenProduct=products.find(p=>p.id===item.productId);
+    if(!originalProduct || !chosenProduct)return total;
+    return total + chosenProduct.price-originalProduct.price;
+  },0);
+}
 function defaultBurgerIngredients(productId){
   const patty=productId==='burger_02'||productId==='burger_03'?'Chicken patty':productId==='burger_04'?'Fish fillet':'Beef patty';
   return [
@@ -762,7 +775,7 @@ function renderDetail(){
       ${isOpen&&!item.removed?`<div class="replace-picker">
         <div class="replace-picker-title">Choose a replacement</div>
         <div class="replace-options">
-          ${choices.slice(0,8).map(p=>`<button class="replace-option" onclick="replaceComponent('${item.id}','${p.id}')">${p.name}</button>`).join('')}
+          ${choices.map(p=>{const delta=p.price-(selected?.price||0);return `<button class="replace-option" onclick="replaceComponent('${item.id}','${p.id}')"><span>${p.name}</span><strong>${money(p.price)}</strong><small>${delta===0?'No price change':`${delta>0?'+':'−'}${money(Math.abs(delta))} from current drink/item`}</small></button>`;}).join('')}
         </div>
         <button class="cancel-replace" onclick="toggleReplace('${item.id}')">Cancel</button>
       </div>`:''}
@@ -807,7 +820,7 @@ function renderDetail(){
     <div class="detail-content">
       <div class="eyebrow">${current.category}</div>
       <h2>${current.name}</h2>
-      <div class="price">${money(current.price)}</div>
+      <div class="price">${money(current.price+bundleComponentAdjustment())}</div>${current.id.startsWith('family_')?`<small class="bundle-price-hint">Includes any price difference from replaced items</small>`:''}
       <div class="tabs">
         <button class="tab ${activeTab==='overview'?'active':''}" onclick="activeTab='overview';renderDetail()">Overview</button>
         <button class="tab ${activeTab==='custom'?'active':''}" onclick="activeTab='custom';renderDetail()">Customization</button>
@@ -847,7 +860,7 @@ function renderDetail(){
       <div><span class="field-label" style="margin:0 0 6px">Quantity</span>
         <div class="qty"><button onclick="qty=Math.max(1,qty-1);renderDetail()">−</button><b>${qty}</b><button onclick="qty++;renderDetail()">＋</button></div>
       </div>
-      <button class="primary" onclick="addToCart()">Add to cart · ${money((current.price+extraCost())*qty)}</button>
+      <button class="primary" onclick="addToCart()">Add to cart · ${money((current.price+bundleComponentAdjustment()+extraCost())*qty)}</button>
     </div>
   </div>`;
   applyTranslations();
@@ -906,8 +919,8 @@ function addToCart(){
   const found=cart.find(x=>x.key===key);
   if(found)found.qty+=qty;
   else cart.push({
-    key,id:current.id,name:current.name,price:current.price+extraCost(),
-    base:current.price,qty,custom:itemCustom,img:current.img
+    key,id:current.id,name:current.name,price:current.price+bundleComponentAdjustment()+extraCost(),
+    base:current.price+bundleComponentAdjustment(),qty,custom:itemCustom,img:current.img
   });
   updateCartUI();
   go('menu');
@@ -1033,7 +1046,7 @@ function renderWalletWidget(){
       <span class="access-tab-label">Toolbar</span>
     </button>
     <section class="access-toolbox-panel" id="accessToolboxPanel" aria-label="Toolbar options and demo wallet">
-      <div class="access-panel-head"><strong>Quick tools</strong><button type="button" class="access-close" aria-label="Close tools" onclick="closeAccessToolbox()">×</button></div>
+      <div class="access-panel-head"><strong>Quick tools</strong><button type="button" class="access-close" aria-label="Close accessibility and wallet tools" onclick="closeAccessToolbox()">×</button></div>
       <div class="access-tool-section">
         <div class="access-section-title">Customer assistance</div>
         <button type="button" class="access-option" id="mobilityOption" aria-pressed="false" onclick="toggleAccessibility('mobility')">
@@ -1058,7 +1071,7 @@ function renderWalletWidget(){
   widget.addEventListener('mouseleave',()=>{
     if(!widget.dataset.pinned)widget.classList.remove('is-open');
   });
-  widget.addEventListener('focusin',()=>widget.classList.add('is-open'));
+  widget.addEventListener('focusin',e=>{if(!widget.dataset.dismissed){widget.classList.add('is-open');const tab=widget.querySelector('.access-toolbox-tab');tab?.setAttribute('aria-expanded','true');}});
   widget.addEventListener('focusout',e=>{
     if(!widget.contains(e.relatedTarget)&&!widget.dataset.pinned)widget.classList.remove('is-open');
   });
@@ -1070,6 +1083,7 @@ function toggleAccessToolbox(){
   const tab=widget?.querySelector('.access-toolbox-tab');
   if(!widget||!tab)return;
   const open=!widget.classList.contains('is-open');
+  widget.dataset.dismissed=open?'':'1';
   widget.classList.toggle('is-open',open);
   if(open)widget.dataset.pinned='1';else delete widget.dataset.pinned;
   tab.setAttribute('aria-expanded',String(open));
@@ -1078,8 +1092,9 @@ function closeAccessToolbox(){
   const widget=document.getElementById('accessibilityToolbox');
   const tab=widget?.querySelector('.access-toolbox-tab');
   widget?.classList.remove('is-open');
-  if(widget)delete widget.dataset.pinned;
+  if(widget){delete widget.dataset.pinned;widget.dataset.dismissed='1';}
   tab?.setAttribute('aria-expanded','false');
+  tab?.focus();
 }
 function toggleAccessibility(kind){
   if(kind!=='mobility'&&kind!=='vision')return;
